@@ -5,14 +5,24 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+body {
+	border: 2px solid black;
+	height: 400px;
+	width: 50%;
+}
+
 #dice,#dice2{
 	display:inline-block;
 	position: relative;
-	left: 400px;
-	top: 400px;
+	right: 200px;
+	top: 200px;
 }
 
-p img {
-	height: 10%;
-	width: 10%;
+p img, p {
+	height: 200px;
+	width: 200px;
+	position: relative;
+	text-align: center;
+	left: 50px;
+	display: inline-block;
 }

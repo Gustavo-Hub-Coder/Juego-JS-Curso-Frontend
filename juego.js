@@ -22,3 +22,38 @@ else if (player2.name==="Frankestein") $('.personaje2').append("<img src='images
 else if (player2.name==="Saw") $('.personaje2').append("<img src='images/villian.svg'>");
 else if (player2.name==="Kraken") $('.personaje2').append("<img src='images/kraken.svg'>")
 }
+
+      $(function dice(){
+        $("#dice").dice();
+        $("#dice, #btn_randRoll").click(function dice(){
+          $("#dice").dice("roll");
+        });
+        $("#btn_roll").click(function dice(){
+          $("#dice").dice("roll", $("#rollValue").val());
+        });
+
+        $("#btn_setSize").click(function dice(){
+          $("#dice").dice("option", {diceSize:$("#dsize").val()});
+        });
+
+        $("#btn_setDuration").click(function dice(){
+          $("#dice").dice("option", {duration: parseInt($("#dur").val())});
+        });
+      });
+       $(function dice2(){
+        $("#dice2").dice();
+        $("#dice2, #btn_randRoll").click(function dice2(){
+          $("#dice2").dice("roll");
+        });
+        $("#btn_roll").click(function dice2(){
+          $("#dice2").dice("roll", $("#rollValue").val());
+        });
+
+        $("#btn_setSize").click(function dice2(){
+          $("#dice2").dice("option", {diceSize:$("#dsize").val()});
+        });
+
+        $("#btn_setDuration").click(function dice2(){
+          $("#dice2").dice("option", {duration: parseInt($("#dur").val())});
+        });
+      });
